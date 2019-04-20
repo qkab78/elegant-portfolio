@@ -1,0 +1,15 @@
+{
+  "name": "elegant-portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w sass/ -o dist/assets/css/ --recursive"
+  },
+  "author": "Quentin Kabasele",
+  "license": "MIT"
+}
