@@ -24,7 +24,7 @@ const toggleMenu = () => {
         menuBranding.classList.remove('show')
         menuNav.classList.remove('show')
         navItems.forEach(navItem => {
-            navItem.classList.add('show')
+            navItem.classList.remove('show')
         })
         showMenu = false;
     }
