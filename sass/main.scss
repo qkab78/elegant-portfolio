@@ -26,7 +26,7 @@ h3 {
     font-weight: 400;
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     &.sm-heading {
@@ -78,7 +78,9 @@ main {
     }
 
     &#about {
+
         .about-infos {
+            padding: 0;
             display: grid;
             grid-gap: 1.7rem;
             grid-template-areas: 'bioimage bio bio''job-1 job-2 job-3';
@@ -87,15 +89,15 @@ main {
             .bio-image {
                 grid-area: bioimage;
                 margin: auto;
-                width: 300px;
-                height: 300px;
+                width: 200px;
+                height: 200px;
                 border-radius: 50%;
                 border-color: 3px solid $secondary-color;
             }
 
             .bio {
                 grid-area: bio;
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
 
             .job-1 {
@@ -116,7 +118,78 @@ main {
                 border-bottom: $secondary-color 5px solid;
             }
         }
+    }
 
+    &#work {
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1.7rem;
+
+            img {
+                width: 100%;
+                border: 3px solid #ffffff;
+
+                &:hover {
+                    opacity: 0.5;
+                    background-color: $secondary-color;
+                    @include easeOut;
+                }
+            }
+
+            .btn {
+                display: block;
+                padding: 0.5rem 1rem;
+                border: 0;
+                margin-bottom: 0.3rem;
+
+                &:hover {
+                    background-color: $secondary-color;
+                    color: set-text-color($secondary-color);
+                    @include easeOut;
+                }
+            }
+
+            .btn-dark {
+                @extend .btn;
+                background-color: darken($primary-color, 50);
+                color: #ffffff;
+            }
+
+            .btn-light {
+                @extend .btn;
+                background-color: lighten($color: $primary-color, $amount: 50);
+                color: #333333;
+            }
+        }
+    }
+
+    &#contact {
+        .boxes {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 1rem;
+
+            div {
+                font-size: 2rem;
+                border: 1px solid #ffffff;
+                padding: 1rem 2rem;
+                margin-bottom: 3rem;
+                @include easeOut;
+
+                &:hover {
+                    padding: 0.5rem 1.5rem;
+                    background-color: $secondary-color;
+                    color: set-text-color($secondary-color);
+
+                    span {
+                        color: set-text-color($secondary-color);
+                    }
+                }
+            }
+        }
     }
 }
 

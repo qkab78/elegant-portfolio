@@ -1,8 +1,28 @@
 // Wide Screens
-@include mediaXl {}
+@include mediaXl {
+    main {
+        padding: 4rem;
+    }
+
+    main#work {
+        .projects {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
 
 // Desktops and Laptops
-@include mediaLg {}
+@include mediaLg {
+    main {
+        padding: 4rem;
+
+        &#work {
+            .projects {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
 
 // Tablets
 @include mediaMd {
@@ -24,6 +44,12 @@
                     'job-2'
                     'job-3';
                 grid-template-columns: 1fr;
+            }
+        }
+
+        &#work {
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     }
@@ -62,6 +88,20 @@
         &#home>h1 {
             margin-top: 10vh;
             font-size: 4rem;
+        }
+
+        &#about>h1 {
+            margin-top: 10vh;
+            font-size: 4rem;
+        }
+
+        &#work>h1 {
+            margin-top: 10vh;
+            font-size: 4rem;
+
+            .projects {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
     }
 
