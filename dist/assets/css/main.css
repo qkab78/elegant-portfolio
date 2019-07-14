@@ -169,7 +169,7 @@ main {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      border-color: 3px solid #1a87ee; }
+      border: 3px solid #1a87ee; }
     main#about .about-infos .bio {
       grid-area: bio;
       font-size: 1rem; }
@@ -189,7 +189,7 @@ main {
     grid-gap: 1.7rem; }
     main#work .projects img {
       width: 100%;
-      border: 3px solid #ffffff; }
+      border: 1px solid #000000; }
       main#work .projects img:hover {
         opacity: 0.5;
         background-color: #1a87ee;
