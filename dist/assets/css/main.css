@@ -47,7 +47,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background-color: #ffffff;
+    background-color: #fff;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -95,7 +95,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #000000;
   height: 100%;
   margin: 0;
