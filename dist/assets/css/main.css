@@ -129,7 +129,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(232, 232, 232, 0.5); }
 
 a {
   color: #000000;
@@ -180,7 +180,7 @@ main {
     main#about .about-infos .job-3 {
       grid-area: job-3; }
     main#about .about-infos .job {
-      background: white;
+      background: rgba(232, 232, 232, 0.5);
       padding: 0.5rem;
       border-bottom: #1a87ee 5px solid; }
   main#work .projects {
@@ -217,16 +217,14 @@ main {
     margin-top: 1rem; }
     main#contact .boxes div {
       font-size: 2rem;
-      border: 1px solid #000000;
+      border: 1px solid #ffffff;
       padding: 1rem 2rem;
       margin-bottom: 3rem;
-      transition: all 0.5s ease-out; 
-    }
+      transition: all 0.5s ease-out; }
       main#contact .boxes div:hover {
         padding: 0.5rem 1.5rem;
         background-color: #1a87ee;
-        color: #000000; 
-      }
+        color: #000000; }
         main#contact .boxes div:hover span {
           color: #000000; }
 
