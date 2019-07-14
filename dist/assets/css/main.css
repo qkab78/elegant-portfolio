@@ -217,14 +217,16 @@ main {
     margin-top: 1rem; }
     main#contact .boxes div {
       font-size: 2rem;
-      border: 1px solid #ffffff;
+      border: 1px solid #000000;
       padding: 1rem 2rem;
       margin-bottom: 3rem;
-      transition: all 0.5s ease-out; }
+      transition: all 0.5s ease-out; 
+    }
       main#contact .boxes div:hover {
         padding: 0.5rem 1.5rem;
         background-color: #1a87ee;
-        color: #000000; }
+        color: #000000; 
+      }
         main#contact .boxes div:hover span {
           color: #000000; }
 
