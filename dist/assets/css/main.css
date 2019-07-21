@@ -129,7 +129,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(232, 232, 232, 0.5); }
 
 a {
   color: #000000;
@@ -169,7 +169,7 @@ main {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      border-color: 3px solid #1a87ee; }
+      border: 3px solid #1a87ee; }
     main#about .about-infos .bio {
       grid-area: bio;
       font-size: 1rem; }
@@ -180,7 +180,7 @@ main {
     main#about .about-infos .job-3 {
       grid-area: job-3; }
     main#about .about-infos .job {
-      background: white;
+      background: rgba(232, 232, 232, 0.5);
       padding: 0.5rem;
       border-bottom: #1a87ee 5px solid; }
   main#work .projects {
@@ -189,7 +189,7 @@ main {
     grid-gap: 1.7rem; }
     main#work .projects img {
       width: 100%;
-      border: 3px solid #ffffff; }
+      border: 1px solid #000000; }
       main#work .projects img:hover {
         opacity: 0.5;
         background-color: #1a87ee;
@@ -255,7 +255,7 @@ main {
       line-height: 1;
       margin-bottom: 1rem; }
     main#about .about-infos {
-      grid-template-areas: 'bioimage' 'bio' 'job-1' 'job-2' 'job-3';
+      grid-template-areas: 'bioimage' 'bio' 'job-1' 'job-2' 'job-3';
       grid-template-columns: 1fr; }
     main#work .projects {
       grid-template-columns: repeat(2, 1fr); }
