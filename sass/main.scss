@@ -121,12 +121,14 @@ main {
 
     &#work {
         .projects {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 1.7rem;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
 
             img {
-                width: 100%;
+                width: 400px;
+                height: 400px;
                 border: 1px solid #000000;
 
                 &:hover {
